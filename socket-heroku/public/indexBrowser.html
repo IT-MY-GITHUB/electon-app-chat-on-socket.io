@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat on Socket.io</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="22chat-50.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+      <div class="sp"></div>
+      <div class="icon"></div>
+      <div class="title">Chat on Socket.io</div>
+      <div class="btn btn-min">▼</div>
+      <div class="btn btn-max">▣</div>
+      <div class="btn btn-close">X</div>
+      <div class="sp"></div>
+    </div>
+    <div class="messages-list">
+    	<ul id="messages"></ul>
+    </div>
+
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <div class="users">
+    	<h3>Users</h3>
+        <hr>
+    	<ul class="users__list"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.2/socket.io.js"></script>
+    <script src="appBrowser.js"></script>
+
+</body>
+
+</html>
